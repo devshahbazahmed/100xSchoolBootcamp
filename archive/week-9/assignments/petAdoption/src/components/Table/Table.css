@@ -1,0 +1,40 @@
+.table-section {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 180px;
+	left: 280px;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+
+.table-container {
+	background-color: #dcf173;
+	color: green;
+}
+
+.table,
+th,
+td {
+	border: 1px solid green;
+	border-collapse: collapse;
+	padding: 20px;
+	text-align: center;
+}
+
+.back-button {
+	background-color: green;
+	color: #fff;
+	border: none;
+	height: 40px;
+	margin: 20px;
+	border-radius: 10px;
+	width: 200px;
+	text-align: center;
+}
+
+.back-button:hover {
+	background-color: darkgreen;
+	cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.form-container {
+	background-color: #dcf173;
+	margin: 0 10px;
+	padding: 20px;
+	width: 35%;
+	position: absolute;
+	left: 440px;
+	top: 140px;
+	opacity: 0.8;
+}
+
+.submit-button {
+	color: white;
+	background-color: green;
+	border: none;
+	width: 470px;
+	height: 40px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.submit-button:hover {
+	background-color: darkgreen;
+	cursor: pointer;
+}

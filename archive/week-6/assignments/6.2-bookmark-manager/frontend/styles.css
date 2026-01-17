@@ -1,0 +1,81 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #0f1237;
+	color: white;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: #5a5fa8;
+	border-radius: 20px;
+	padding: 30px;
+	width: 100%;
+	max-width: 500px;
+}
+
+h1 {
+	color: #5a0b9b;
+	text-align: center;
+}
+.input-container {
+	font-size: large;
+}
+
+.inputs {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#bookmark-url {
+	margin: 10px 0;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #48455b;
+	border: none;
+	width: 100%;
+	max-width: 250px;
+	color: white;
+}
+
+#bookmark-category {
+	margin: 10px 0;
+	background-color: #48455b;
+	padding: 20px;
+	border: none;
+	border-radius: 15px;
+	color: white;
+}
+
+button {
+	background-color: #5a0b9b;
+	padding: 20px;
+	border-radius: 20px;
+	border: none;
+	color: #fff;
+	width: 100%;
+	margin: 10px 0;
+}
+
+#bookmark-list {
+	display: flex;
+	flex-direction: column;
+}
+
+#bookmark-list li {
+	width: 100%;
+	border-radius: 15px;
+	color: white;
+	background-color: #48455b;
+}
+
+button.delete-btn {
+	padding: 20px;
+	background-color: red;
+	color: white;
+	border-radius: 10px;
+}

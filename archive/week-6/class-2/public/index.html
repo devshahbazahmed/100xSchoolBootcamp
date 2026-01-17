@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Authentication</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+	</head>
+	<body>
+		<div id="signup">
+			Signup
+			<input
+				type="text"
+				name="username"
+				placeholder="Username"
+				id="signup-username" />
+			<input
+				type="password"
+				name="password"
+				placeholder="Password"
+				id="signup-password" />
+			<button onclick="signup()">Submit</button>
+		</div>
+		<div id="signin">
+			Signin
+			<input
+				type="text"
+				name="username"
+				placeholder="Username"
+				id="signin-username" />
+			<input
+				type="password"
+				name="password"
+				placeholder="Password"
+				id="signin-password" />
+			<button onclick="signin()">Submit</button>
+		</div>
+		<div>
+			User Information
+			<div id="information"></div>
+		</div>
+		<div>
+			<button onclick="logout()" style="display: none" id="logout-button">
+				Logout
+			</button>
+		</div>
+		<script>
+			async function signup() {
+				const username =
+					document.getElementById('signup-username').value;
+				const password =
+					document.getElementById('signup-password').value;
+				await axios.post('http://localhost:3000/signup', {
+					username: username,
+					password: password,
+				});
+				alert('You are signed in');
+			}
+
+			async function signin() {
+				const username =
+					document.getElementById('signin-username').value;
+				const password =
+					document.getElementById('signin-password').value;
+				const response = await axios.post(
+					'http://localhost:3000/signin',
+					{
+						username,
+						password,
+					}
+				);
+				localStorage.setItem('token', response.data.token);
+			}
+
+			async function getUserInformation() {
+				const response = await axios.get('http://localhost:3000/me', {
+					headers: {
+						token: localStorage.getItem('token'),
+					},
+				});
+
+				if (localStorage.getItem('token')) {
+					document.getElementById('signup').style.display = 'none';
+					document.getElementById('signin').style.display = 'none';
+					document.getElementById('logout-button').style.display =
+						'block';
+				}
+				document.getElementById('information').innerHTML =
+					'Username: ' +
+					response.data.username +
+					' Password: ' +
+					response.data.password;
+			}
+			getUserInformation();
+
+			function logout() {
+				localStorage.removeItem('token');
+			}
+		</script>
+	</body>
+</html>

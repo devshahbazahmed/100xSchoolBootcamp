@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Visual Studio Code - Code Editor</title>
+  </head>
+  <body>
+    <div class="content">
+      <nav id="navbar">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" width="50" height="40" />
+          <h2>Visual Studio Code</h2>
+        </div>
+        <div class="links">
+          <a href="#">Docs</a>
+          <a href="#">Updates</a>
+          <a href="#">Blog</a>
+          <a href="#">API</a>
+          <a href="#">Extensions</a>
+          <a href="#">FAQ</a>
+          <a href="#">Github Copilot</a>
+        </div>
+        <div class="right">
+          <div class="theme">
+            <i class="fa-regular fa-sun"></i>
+          </div>
+          <div class="searchBox">
+            <input type="search" placeholder="Search Docs" />
+          </div>
+          <button id="download">Download</button>
+        </div>
+      </nav>
+      <section id="hero-section">
+        <p class="version">
+          <a href="https://code.visualstudio.com/updates/v1_95">Version 1.95</a>
+          is now available! Read about the new features and fixes from October.
+        </p>
+        <h1 class="hero-title">Code faster with AI</h1>
+        <h3 class="hero-sub-title">
+          Visual Studio Code with GitHub Copilot supercharges your code with
+          AI-powered suggestions, right in your editor.
+        </h3>
+        <div id="buttons">
+          <button class="download-button">Download for macOS</button>
+          <button class="copilot-button">Try Github Copilot</button>
+        </div>
+        <div>
+          <p class="download-para">
+            <a href="#">Web,</a>
+            <a href="#">Insiders edition,</a> or
+            <a href="#">other platforms</a>
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/home-screenshot-copilot.png" alt="hero-image" />
+        </div>
+      </section>
+      <section id="copilot-section">
+        <div id="copilot-text-part">
+          <h2>Code with Github Copilot</h2>
+          <p>
+            Write code faster and smarter with GitHub Copilot, your AI pair
+            programmer.
+          </p>
+          <a
+            href="https://github.com/settings/copilot?utm_source=vscode-landing-2&utm_medium=swim&utm_campaign=2024q3-em-MSFT-signup"
+            >Try Github Copilot free for 30days</a
+          >
+          <p>
+            <a
+              href="https://code.visualstudio.com/docs/copilot/ai-powered-suggestions"
+              >Completions</a
+            >
+            present suggestions automatically to help you code more efficiently.
+          </p>
+          <p>
+            <a href="https://code.visualstudio.com/docs/copilot/copilot-chat"
+              >Copliot Chat</a
+            >
+            understands the context of your code, workspace, extensions,
+            settings, and more.
+          </p>
+          <p>
+            <a
+              href="https://code.visualstudio.com/docs/copilot/getting-started#_refactor-your-code-through-ai-chat"
+              >Inline Chat</a
+            >
+            enables you to iteratively generate edits and get answers to quick
+            questions, directly on your code.
+          </p>
+        </div>
+        <div id="copilot-img-part">
+          <img src="./assets/swimlane-copilot.png" alt="swimlane-copilot" />
+        </div>
+      </section>
+      <section id="language-section">
+        <div id="language-text-part">
+          <h2>Code in any language</h2>
+          <p>
+            VS Code supports almost every major programming language. Several
+            ship in the box, like JavaScript, TypeScript, CSS, and HTML, but
+            extensions for others can be found in the VS Code Marketplace.
+          </p>
+        </div>
+        <div id="language-icons-part">
+          <div class="icons">
+            <img src="./assets/language-js.png" alt="language-js" />
+            <p>JavaScript</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-ts.png" alt="language-ts" />
+            <p>TypeScript</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-python.png" alt="language-python" />
+            <p>Python</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-cs.png" alt="language-cs" />
+            <p>C#</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-cpp.png" alt="language-cpp" />
+            <p>C++</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-html.png" alt="language-html" />
+            <p>HTML</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-java.png" alt="language-java" />
+            <p>Java</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-json.png" alt="language-json" />
+            <p>JSON</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-php.png" alt="language-php" />
+            <p>PHP</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-markdown.png" alt="language-markdown" />
+            <p>Markdown</p>
+          </div>
+          <div class="icons">
+            <img
+              src="./assets/language-powershell.png"
+              alt="language-powershell"
+            />
+            <p>Powershell</p>
+          </div>
+          <div class="icons">
+            <img src="./assets/language-yaml.png" alt="language-yaml" />
+            <p>YAML</p>
+          </div>
+        </div>
+      </section>
+      <section id="extensions-section">
+        <div id="extensions-text">
+          <h2>Code with Extensions</h2>
+          <p>
+            Whether you're a beginner or an expert, we've got you covered.
+            Choose from hundreds of extensions to power up your VS Code
+            experience.
+          </p>
+          <a
+            href="https://code.visualstudio.com/docs/editor/extension-marketplace"
+            >Learn more about extensions</a
+          >
+        </div>
+        <div id="extensions-grid">
+          <div class="extensions-card">
+            <img
+              src="./assets/python-extension.png"
+              alt="python-extension"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>Python</h4>
+              <p>Adds rich language support for python</p>
+            </div>
+          </div>
+          <div class="extensions-card">
+            <img
+              src="./assets/copilot-extension.png"
+              alt="copilot"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>GitHub Copilot</h4>
+              <p>Your AI pair programmer</p>
+            </div>
+          </div>
+
+          <div class="extensions-card">
+            <img
+              src="./assets/c-extension.png"
+              alt="c-extension"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>C/C++</h4>
+              <p>Adds rich language support for C/C++</p>
+            </div>
+          </div>
+          <div class="extensions-card">
+            <img
+              src="./assets/jupyter-extension.png"
+              alt="jupyter-extension"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>Jupyter</h4>
+              <p>Language support for Jupyter Notebooks</p>
+            </div>
+          </div>
+          <div class="extensions-card">
+            <img
+              src="./assets/gitlens-extension.png"
+              alt="gitlens-extension"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>GitLens</h4>
+              <p>Supercharge your Git experience</p>
+            </div>
+          </div>
+          <div class="extensions-card">
+            <img
+              src="./assets/cs-dev-kit-extension.png"
+              alt="cs-dev-kit-extension"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>C# Dev Kit</h4>
+              <p>Powerful tools for your C# environment</p>
+            </div>
+          </div>
+          <div class="extensions-card">
+            <img
+              src="./assets/github-pull-requests-extension.png"
+              alt="github-pull-requests-extension"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>GitHub Codespaces</h4>
+              <p>Fully configured dev environments in the cloud</p>
+            </div>
+          </div>
+          <div class="extensions-card">
+            <img
+              src="./assets/github-pull-requests-extension.png"
+              alt="github-pull-requests-extension"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>GitHub Pull Requests</h4>
+              <p>Collaborate on issues and pull requests</p>
+            </div>
+          </div>
+          <div class="extensions-card">
+            <img
+              src="./assets/remote-extension.png"
+              alt="remote-extension"
+              width="40"
+              height="40"
+            />
+            <div class="card-content">
+              <h4>Remote Development</h4>
+              <p>Open folders in a container on a remote machine</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="customize-section">
+        <div id="customize-text">
+          <h2>Fully customizable</h2>
+          <p>
+            Customize your VS Code UI and layout so that it fits your coding
+            style.
+          </p>
+          <p>
+            <a href="https://code.visualstudio.com/docs/getstarted/themes"
+              >Color themes</a
+            >
+            let you modify the colors in VS Code's user interface to suit your
+            preferences and work environment.
+          </p>
+          <p>
+            <a
+              href="https://code.visualstudio.com/docs/getstarted/settings#_settings-sync"
+              >Setting Sync</a
+            >
+            enables you to share your user settings across your VS Code
+            instances with the Settings Sync feature.
+          </p>
+          <p>
+            <a href="https://code.visualstudio.com/docs/editor/profiles"
+              >Profiles</a
+            >
+            let you create sets of customizations and quickly switch between
+            them or share them with others.
+          </p>
+        </div>
+        <div id="customize-img">
+          <img
+            src="./assets/swimlane-customized.png"
+            alt="swimlane-customized"
+          />
+        </div>
+      </section>
+      <section id="anywhere-section">
+        <div id="anywhere-text">
+          <h2>Code anywhere</h2>
+          <p>
+            Code wherever you're most productive, whether you're connected to
+            the cloud, a remote repository, or in the browser with VS Code for
+            the Web (vscode.dev).
+          </p>
+          <p>
+            <a href="https://code.visualstudio.com/docs/sourcecontrol/overview"
+              >Built-in Source Control</a
+            >
+            empowers you with Git support out-of-the-box. Many other source
+            control providers are available through extensions.
+          </p>
+          <p>
+            <a href="https://code.visualstudio.com/docs/remote/codespaces"
+              >Github Codespaces</a
+            >
+            provides cloud-powered development environments for any activity -
+            whether it's a long-term project, or a short-term task like
+            reviewing a pull request.
+          </p>
+        </div>
+        <div id="anywhere-img">
+          <img src="./assets/swimlane-anywhere.png" alt="swimlane-anywhere" />
+        </div>
+      </section>
+      <section id="features">
+        <h2 class="features-title">Code with rich features</h2>
+        <p class="features-para">
+          There's a lot more to an editor. Whether it's using built-in features
+          or rich extensions, there's something for everyone.
+        </p>
+        <div id="cards">
+          <a href="https://code.visualstudio.com/docs/terminal/basics">
+            <div class="card">
+              <img
+                src="./assets/codicon-terminal.svg"
+                alt="codicon-terminal"
+                width="30"
+                height="30"
+                class="card-image"
+              />
+              <h3 class="card-title">Integrated Terminal</h3>
+              <p class="card-desc">
+                Use your favorite shell whether it's zsh, pwsh, or git bash, all
+                inside the editor.
+              </p>
+            </div>
+          </a>
+          <a href="https://code.visualstudio.com/docs/terminal/basics">
+            <div class="card">
+              <img
+                src="./assets/codicon-debug.svg"
+                alt="codicon-debug"
+                width="30"
+                height="30"
+                class="card-image"
+              />
+              <h3 class="card-title">Run code</h3>
+              <p class="card-desc">
+                Run and debug your code without leaving your editor.
+              </p>
+            </div>
+          </a>
+          <a href="https://code.visualstudio.com/docs/terminal/basics">
+            <div class="card">
+              <img
+                src="./assets/codicon-version-control.svg"
+                alt="codicon-version-control"
+                width="30"
+                height="30"
+                class="card-image"
+              />
+              <h3 class="card-title">Version control</h3>
+              <p class="card-desc">
+                Built-in support for git and many other source control
+                providers.
+              </p>
+            </div>
+          </a>
+          <a href="https://code.visualstudio.com/docs/terminal/basics">
+            <div class="card">
+              <img
+                src="./assets/codicon-build-tasks.svg"
+                alt="codicon-build-tasks"
+                width="30"
+                height="30"
+                class="card-image"
+              />
+              <h3 class="card-title">Build tasks</h3>
+              <p class="card-desc">
+                Run tools and analyze their results from within VS Code.
+              </p>
+            </div>
+          </a>
+          <a href="https://code.visualstudio.com/docs/terminal/basics">
+            <div class="card">
+              <img
+                src="./assets/codicon-local-history.svg"
+                alt="codicon-local-history"
+                width="30"
+                height="30"
+                class="card-image"
+              />
+              <h3 class="card-title">Local history</h3>
+              <p class="card-desc">
+                Never lose your changes with automatically tracked local
+                history.
+              </p>
+            </div>
+          </a>
+          <a href="https://code.visualstudio.com/docs/terminal/basics">
+            <div class="card">
+              <img
+                src="./assets/codicon-themes.svg"
+                alt="codicon-themes"
+                width="30"
+                height="30"
+                class="card-image"
+              />
+              <h3 class="card-title">Themes</h3>
+              <p class="card-desc">
+                Your theme is an extension of your personality. Add some flair
+                to your editor and add your touch.
+              </p>
+            </div>
+          </a>
+          <a href="https://code.visualstudio.com/docs/terminal/basics">
+            <div class="card">
+              <img
+                src="./assets/codicon-accessibility.svg"
+                alt="codicon-accessibility"
+                width="30"
+                height="30"
+                class="card-image"
+              />
+              <h3 class="card-title">Accessibility</h3>
+              <p class="card-desc">
+                Optimized experience for screen readers, high contrast themes,
+                and keyboard only navigation.
+              </p>
+            </div>
+          </a>
+          <a href="https://code.visualstudio.com/docs/terminal/basics">
+            <div class="card">
+              <img
+                src="./assets/codicon-web.svg"
+                alt="codicon-web"
+                width="30"
+                height="30"
+                class="card-image"
+              />
+              <h3 class="card-title">Web support</h3>
+              <p class="card-desc">
+                Whether you are on phone, tablet, or desktop, you can access
+                your code from anywhere.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-icons">
+          <img src="./assets/x-icon.svg" alt="x-icon" width="20" height="20" />
+          <img
+            src="./assets/github-icon.svg"
+            alt="github-icon"
+            width="30"
+            height="30"
+          />
+          <img
+            src="./assets/youtube-icon.svg"
+            alt="youtube-icon"
+            width="30"
+            height="30"
+          />
+        </div>
+        <div class="footer-links">
+          <a href="#">Support</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">License</a>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/b1099567d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Counter</title>
+	</head>
+	<body>
+		<button
+			id="btn"
+			onclick="onButtonClick()">
+			Counter 0
+		</button>
+		<script>
+			function onButtonClick() {
+				const countButton = document.getElementById('btn').innerHTML;
+				console.log(countButton.split(' ')[1]);
+				const countValue = countButton.split(' ')[1];
+				const newCount = parseInt(countValue) + 1;
+				document.getElementById(
+					'btn',
+				).innerHTML = `Counter ${newCount}`;
+			}
+		</script>
+	</body>
+</html>

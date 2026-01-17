@@ -1,0 +1,55 @@
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons {
+  background-color: #ddd8d8;
+  max-width: fit-content;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: #9d9b9b;
+}
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#red {
+  background-color: red;
+}
+#yellow {
+  background-color: yellow;
+}
+#black {
+  background-color: #000;
+  color: #fff;
+}
+#purple {
+  background-color: purple;
+  color: #fff;
+}
+#green {
+  background-color: green;
+  color: #fff;
+}
+#blue {
+  background-color: blue;
+  color: #fff;
+}
+#orange {
+  background-color: rgb(255, 94, 0);
+  color: #fff;
+}

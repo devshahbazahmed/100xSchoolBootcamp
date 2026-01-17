@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fetch</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.6/axios.min.js"></script>
+	</head>
+	<body>
+		<div id="posts"></div>
+		<script>
+			// async function fetchPosts() {
+			// 	const res = await fetch(
+			// 		'https://jsonplaceholder.typicode.com/posts/1'
+			// 	);
+			// 	const data = await res.json();
+			// 	console.log(data);
+			// 	document.getElementById('posts').innerHTML = data.body;
+			// }
+			// fetchPosts();
+
+			async function fetchPosts() {
+				const res = await axios.get(
+					'https://jsonplaceholder.typicode.com/posts/1'
+				);
+				console.log(res.data);
+				document.getElementById('posts').innerHTML = res.data.body;
+			}
+			fetchPosts();
+		</script>
+	</body>
+</html>

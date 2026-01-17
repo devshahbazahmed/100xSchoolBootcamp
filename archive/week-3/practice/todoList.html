@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+  </head>
+
+  <body>
+    <h1>Todo list</h1>
+    <div id="todos">
+      <div id="todo-1">
+        <h4>1. Take class</h4>
+        <button onclick="deleteTodo(1)">Delete</button>
+      </div>
+      <div id="todo-2">
+        <h4>2. Go out to eat</h4>
+        <button onclick="deleteTodo(2)">Delete</button>
+      </div>
+    </div>
+    <div>
+      <input type="text" />
+      <button onclick="addTodo()">Add Todo</button>
+    </div>
+    <script>
+      function deleteTodo(index) {
+        const element = document.getElementById("todo-" + index);
+        const parentElement = element.parentNode;
+        parentElement.removeChild(element);
+      }
+      function addTodo() {
+        const inputEl = document.querySelector("input");
+        const value = inputEl.value;
+        console.log(value);
+
+        const newDiv = document.createElement("div");
+        newDiv.innerHTML = value;
+        const parentEl = document.getElementById("todos");
+        parentEl.appendChild(newDiv);
+
+        // let ctr = 0;
+        // function callback() {
+        //   document.querySelectorAll("h4")[1].innerHTML = ctr;
+        //   ctr = ctr + 1;
+        // }
+        // setInterval(() => {
+        //   callback();
+        // }, 1000);
+      }
+      const firstEl = document.querySelector("h4");
+      firstEl.innerHTML = "1. Go to gym";
+    </script>
+  </body>
+</html>

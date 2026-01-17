@@ -1,0 +1,17 @@
+.header {
+	background-color: #dcf173;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 120px;
+}
+
+.title {
+	color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+}
